@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemviz"
+version = "0.1.0"
+description = "初中化学可视化：元素周期表、原子结构、分子模型、化学式与方程式配平"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "chemistry", "visualization", "teacher", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+chemviz = "chemviz.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/chemviz"
+Source = "https://github.com/eastyou/chemviz"
+
+[tool.setuptools]
+packages = ["chemviz"]
